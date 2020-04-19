@@ -30,6 +30,7 @@ button {
   padding: 16px 31px;
   text-align: center;
   width: 40%;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
 }
 .logo {
   width: 12vw;
@@ -45,26 +46,26 @@ button {
   grid-template: 9fr 1fr / 7fr 1fr 1fr 1fr;
 }
 .mockup {
-  width: 80%;
+  width: 100%;
 }
 .image-column {
   display: grid;
-
 }
 .facebook {
   grid-column: 2;
 }
 .text {
-    grid-row: 1;
-    grid-column-start: 1;
-    grid-column-end: 4;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 @media screen and (max-width: 700px) {
   .content {
     grid-template: 600px 100px / 100%;
+    height: 98%;
   }
   .column {
-    grid-template: 3fr 1fr / repeat(11, 1fr)
+    grid-template: 3fr 1fr / repeat(11, 1fr);
   }
   .mockup {
     width: 100%;
@@ -88,6 +89,6 @@ button {
     grid-column: 6;
   }
   .twitter {
-  grid-column: 7;
+    grid-column: 7;
   }
 }
